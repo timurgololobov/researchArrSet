@@ -29,9 +29,9 @@ report(diffTimePushArray, "добавление элемента Array");
 const diffTimePushSet = research(() => researchSet.add(100000002));
 report(diffTimePushSet, "добавление элемента Set");
 const diffTimeFindArray = research(() => researchArray.indexOf(100000002));
-report(diffTimePushArray, "поиск элемента Array");
+report(diffTimeFindArray, "поиск элемента Array");
 const diffTimeFindSet = research(() => researchSet.has(100000002));
-report(diffTimePushSet, "поиск элемента Set");
+report(diffTimeFindSet, "поиск элемента Set");
 const diffTimeDeleteArray = research(
   () => delete researchArray[researchArray.indexOf(100000002)]
 );
